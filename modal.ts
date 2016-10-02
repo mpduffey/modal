@@ -12,7 +12,7 @@ import {ModalService}         from 'modules/modal/modal-service';
 						<h4 class="modal-title">{{modal.title}}</h4>
 					</div>
 					<div class="modal-body">
-						<reactive-form [formObject]="modal.formObject.formObject" [fieldObject]="modal.formObject.fieldObject" [cancelFunction]="closeModal"></reactive-form>
+						<reactive-form [formObject]="modal.formObject" [cancelFunction]="closeModal"></reactive-form>
 					</div>
 					<div *ngIf="showFooter" class="modal-footer">
 						<button type="button" class="btn btn-default" (click)="modal.showModal=false;">Close</button>
